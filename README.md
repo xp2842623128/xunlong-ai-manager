@@ -34,7 +34,7 @@
 dist\迅龙AI管家-win32-x64\迅龙AI管家.exe
 ```
 
-双击即用，无需安装 Node。数据目录：`%APPDATA%\XunlongAIManager`。打包时会把 `build/icon.ico` 写入 exe，资源管理器显示蓝龙标，不再是 Electron 默认的原子图标。
+双击即用，无需安装 Node。数据目录：`%APPDATA%\XunlongAIManager`。
 
 ### 方式二：源码运行
 
