@@ -147,10 +147,6 @@ node tools\tests\audit-routes.mjs
 - 不提供任何破解、绕过授权、共享账号的能力。
 - 改写 CLI 配置、使用第三方模型服务前，请自行确认服务条款与所在地法规。
 
-## 图标来源
-
-龙形图标为 game-icons.net 的 `dragon-head`（CC BY 3.0），已按 CC BY 要求标注来源；矢量与品牌文件见 [品牌资产](docs/brand/README.md)。
-
 ## License
 
 MIT（本仓库代码）。第三方名称与商标归各自权利人。完整许可见 [LICENSE](LICENSE)。
