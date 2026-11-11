@@ -19,7 +19,9 @@
 - **余额 / 额度**：DeepSeek、硅基流动、OpenRouter、Novita、Kimi、StepFun 官方余额接口。
 - **用量统计**：按天、按供应商、按模型统计请求与 Token，保留最近请求明细。
 - **MCP 管理**：增删改后一键写入 Claude Code / Codex / Gemini CLI / Qwen Code 四个 CLI。
+- **技能同步**：技能集中存放在一个本地库，勾选应用后一键同步进 Claude Code / Codex CLI / Gemini CLI / Qwen Code，按内容哈希只写变化的，同步前自动备份。
 - **提示词库**：内置 5 条工程提示词，支持 `{{变量}}` 占位与一键复制。
+- **自动分类**：技能、MCP、插件、提示词共用一套分类（开发、文档、数据、网页、协作、系统、AI 等），按关键词自动归位，手动指定优先。
 - **会话浏览**：Claude Code、Codex、Gemini CLI、Qwen Code、OpenCode，以及 Kimi / Copilot / iFlow / Grok / Pi / OMP 的 JSONL 会话；支持按应用筛选、搜索与按项目分组。
 - **备份恢复**：手动备份 + 每次切换前自动备份，恢复前再存一份现场。
 - **托盘 / 轻量**：Electron 托盘常驻，默认关闭窗口最小化到托盘（可在设置里关掉）。
