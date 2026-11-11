@@ -100,7 +100,7 @@ build/                   打包脚本与最终图标
 ├─ rcedit.exe            打包时写入 exe 图标与版本信息
 └─ pack.mjs
 docs/
-├─ brand/                标志、图标与品牌资产
+├─ brand/
 └─ screenshots/          当前版本界面截图
 tools/
 └─ tests/                适配器 / MCP / 备份 / 路由测试
