@@ -138,7 +138,6 @@ node tools\tests\audit-routes.mjs
 ## 文档与资产
 
 - [截图索引](docs/screenshots/README.md)：工作台、供应商、应用详情、网关、设置、用量等当前界面。
-- [品牌资产](docs/brand/README.md)：标志、图标、品牌卡与来源说明。
 - [测试工具](tools/README.md)：夹具测试与路由审计的用法。
 
 ## 合规说明
