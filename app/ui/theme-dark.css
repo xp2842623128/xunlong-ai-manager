@@ -1,0 +1,249 @@
+/* 深色主题：只在 html[data-theme="dark"] 下生效，浅色主题的一切规则保持不变。
+   选择器都带 html[data-theme="dark"] 前缀，权重高于 styles.css 里的单类规则。 */
+
+html[data-theme='dark'] {
+  --bg: #0e0f13;
+  --bg-soft: #12141a;
+  --panel: #171922;
+  --panel-2: #1b1e28;
+  --surface: #171922;
+  --surface-2: #1b1e28;
+  --surface-3: #20242f;
+  --border: #272c37;
+  --border-soft: #1f232c;
+  --text: #e8eaf1;
+  --text-2: #cbd0da;
+  --text-3: #98a0af;
+  --muted: #949bab;
+  --dim: #7b8294;
+  --accent: #6b74ff;
+  --accent-2: #8b7bff;
+  --tint: rgba(107, 116, 255, 0.14);
+  --tint-strong: rgba(107, 116, 255, 0.22);
+  --tint-border: #3a4185;
+  --green: #3ddc97;
+  --amber: #f5c451;
+  --red: #ff6b6b;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 18px 50px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
+/* ---------- 卡片 / 面板 / 输入 ---------- */
+html[data-theme='dark'] :is(.side-card, .gw-indicator, .hero-inner, .mini-card, .store-card, .prov,
+  .modal, .modal-foot, .toast, .tabs, .tab.active, .drawer, .msg, .icon-round, .sub-pill, .prov-row,
+  .menu, .stat-strip, .sess-list, .pill-pts, .global-menu, .sgroup, .seg, .seg button.active,
+  .accel-ring, .btn:not(.primary), .badge, .store-btn:not(.primary), .icon-btn) {
+  background: var(--surface);
+}
+
+html[data-theme='dark'] :is(.input, .select, .textarea) {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+html[data-theme='dark'] :is(.table th, .table td) {
+  background: transparent;
+}
+
+html[data-theme='dark'] .table th {
+  background: var(--surface-2);
+  color: var(--text-3);
+}
+
+html[data-theme='dark'] :is(.hero-inner, .mini-card, .store-card, .prov, .modal, .drawer, .menu,
+  .global-menu, .stat-strip, .sess-list, .sgroup, .side-card, .gw-indicator, .accel-ring, .tabs) {
+  border-color: var(--border);
+}
+
+/* ---------- 悬停 / 选中态 ---------- */
+html[data-theme='dark'] :is(.btn:hover, .btn.ghost:hover, .store-btn:hover, .hero-item:hover,
+  .table tr:hover td, .list-item:hover, .app-tab:hover, .skill-row:hover, .sess-head:hover,
+  .menu button:hover, .global-menu button:hover, .back-link:hover, .icon-btn:hover, .icon-round:hover) {
+  background: var(--surface-3);
+}
+
+html[data-theme='dark'] :is(.btn:hover, .store-btn:hover, .store-card:hover, .prov:hover,
+  .prov-row:hover, .icon-round:hover, .sub-pill:hover) {
+  border-color: var(--tint-border);
+}
+
+/* ---------- 文字层级 ---------- */
+html[data-theme='dark'] :is(.nav-item, .side-app, .app-tab, .sub-pill, .settings-nav-item, .sl,
+  .menu button, .global-menu button, .btn, .store-btn, .store-btn.primary, .badge, .field label,
+  .act, .copybox span, .tab, .gw-indicator, .mini-icon, .app-check) {
+  color: var(--text-2);
+}
+
+html[data-theme='dark'] :is(.store-section-title, .hero-item .nm, .store-logo, .prov-row .row-ico,
+  .pill-pts, .icon-btn, .icon-round, .back-link, .seg button) {
+  color: var(--text-3);
+}
+
+html[data-theme='dark'] :is(.nav-item svg, .icon-btn svg, .icon-round svg) {
+  color: var(--text-3);
+}
+
+html[data-theme='dark'] :is(.side-label, .sd, .muted, .hero-item .sub, .prov-row .sub) {
+  color: var(--muted);
+}
+
+/* 强调色按钮/激活项保持白字 */
+html[data-theme='dark'] :is(.nav-item.active, .settings-nav-item.active, .btn.primary,
+  .store-btn.primary, .tab.active, .seg button.active, .sub-pill.active) {
+  color: #fff;
+}
+
+html[data-theme='dark'] .tab.active,
+html[data-theme='dark'] .seg button.active {
+  background: var(--surface-3);
+  border-color: var(--tint-border);
+}
+
+/* 分类筛选 + 每项分类选择 */
+html[data-theme='dark'] .cat-chip,
+html[data-theme='dark'] .cat-select {
+  background: var(--panel-2);
+  border-color: var(--border);
+  color: var(--text-2);
+}
+
+html[data-theme='dark'] .cat-chip:hover,
+html[data-theme='dark'] .cat-select:hover {
+  border-color: #38404f;
+}
+
+html[data-theme='dark'] .cat-chip.active {
+  background: var(--tint);
+  border-color: var(--tint-border);
+  color: #b9c0ff;
+}
+
+/* ---------- 状态色 / 徽标 / 气泡 ---------- */
+html[data-theme='dark'] .badge.blue {
+  color: #b9c0ff;
+  border-color: var(--tint-border);
+  background: var(--tint);
+}
+
+html[data-theme='dark'] .badge.green {
+  color: #7ce7b4;
+  border-color: rgba(61, 220, 151, 0.35);
+  background: rgba(61, 220, 151, 0.12);
+}
+
+html[data-theme='dark'] .badge.amber {
+  color: #f7cf72;
+  border-color: rgba(245, 196, 81, 0.35);
+  background: rgba(245, 196, 81, 0.12);
+}
+
+html[data-theme='dark'] .msg.user {
+  background: var(--tint);
+  border-color: var(--tint-border);
+}
+
+html[data-theme='dark'] .msg.assistant {
+  background: rgba(61, 220, 151, 0.1);
+  border-color: rgba(61, 220, 151, 0.28);
+}
+
+html[data-theme='dark'] .prov-avatar,
+html[data-theme='dark'] .avatar {
+  background: var(--tint);
+  border-color: var(--tint-border);
+  color: #b9c0ff;
+}
+
+html[data-theme='dark'] .notice {
+  color: var(--text-2);
+}
+
+html[data-theme='dark'] .accel-hero {
+  background: linear-gradient(120deg, #1a1d33, #14222b);
+  border-color: var(--border);
+}
+
+html[data-theme='dark'] .accel-ring {
+  box-shadow: 0 0 0 6px rgba(107, 116, 255, 0.12);
+}
+
+html[data-theme='dark'] :is(.pill-free, .pill-vip) {
+  color: #7ce7b4;
+  background: rgba(61, 220, 151, 0.12);
+  border-color: rgba(61, 220, 151, 0.3);
+}
+
+html[data-theme='dark'] :is(.skill-chip.link, .skill-chip.copy, .skill-chip.warn, .skill-chip.off) {
+  background: var(--surface-2);
+  border-color: var(--border);
+  color: var(--text-3);
+}
+
+html[data-theme='dark'] .switch:not(.on) {
+  background: #2b3040;
+}
+
+html[data-theme='dark'] .switch.on {
+  background: var(--accent);
+}
+
+html[data-theme='dark'] .switch::after {
+  background: #f2f4ff;
+}
+
+html[data-theme='dark'] :is(.modal-mask, .drawer-mask) {
+  background: rgba(3, 5, 10, 0.6);
+}
+
+html[data-theme='dark'] :is(.menu, .global-menu, .modal, .drawer, .toast) {
+  box-shadow: var(--shadow-lg);
+}
+
+html[data-theme='dark'] ::selection {
+  background: rgba(107, 116, 255, 0.4);
+  color: #fff;
+}
+
+/* ---------- 顶栏（原本是半透明白）/ 激活态 / 主按钮 ---------- */
+html[data-theme='dark'] .topbar {
+  background: rgba(14, 15, 19, 0.92);
+}
+
+html[data-theme='dark'] .topstrip {
+  background: rgba(14, 15, 19, 0.94);
+}
+
+html[data-theme='dark'] .btn.primary,
+html[data-theme='dark'] .store-btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+html[data-theme='dark'] .btn.primary:hover,
+html[data-theme='dark'] .store-btn.primary:hover {
+  background: #7c85ff;
+  filter: none;
+}
+
+html[data-theme='dark'] .app-tab.active {
+  background: var(--tint);
+  color: #b9c0ff;
+}
+
+html[data-theme='dark'] .sub-pill.active {
+  background: var(--tint);
+  border-color: var(--tint-border);
+  color: #b9c0ff;
+}
+
+html[data-theme='dark'] .seg button.active {
+  background: var(--tint);
+  color: #b9c0ff;
+  box-shadow: none;
+}
+
+html[data-theme='dark'] .switch.on {
+  background: var(--accent);
+}

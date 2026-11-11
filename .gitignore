@@ -1,0 +1,19 @@
+# ä¾èµ–ä¸æ„å»ºäº§ç‰©
+node_modules/
+dist/
+*.log
+*.tmp
+*.bak
+
+# æœ¬åœ°é€†å‘ / æµè§ˆå™¨ profile ä¸´æ—¶ç›®å½•
+_p*/
+build/edge*/
+
+# ç³»ç»Ÿä¸ç¼–è¾‘å™¨
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ¾ºÆ··ÖÎö×ÊÁÏÖ»ÔÚ±¾»ú£¬²»¹«¿ª
+docs/analysis/

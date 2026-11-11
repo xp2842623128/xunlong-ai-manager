@@ -1,0 +1,30 @@
+{
+  "name": "xunlong-ai-manager",
+  "productName": "迅龙AI管家",
+  "version": "1.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "免费开源的本地 AI 编程管家：多供应商管理、一键切换、聚合网关、用量统计",
+  "type": "module",
+  "main": "app/electron/main.cjs",
+  "scripts": {
+    "dev": "node app/server.mjs",
+    "start": "electron .",
+    "pack": "node build/pack.mjs",
+    "test": "node tools/tests/test-app-adapters.mjs && node tools/tests/test-mcp.mjs && node tools/tests/test-backup.mjs && node tools/tests/test-skills.mjs && node tools/tests/test-skills-api.mjs && node tools/tests/audit-routes.mjs",
+    "test:adapters": "node tools/tests/test-app-adapters.mjs",
+    "test:mcp": "node tools/tests/test-mcp.mjs",
+    "test:backup": "node tools/tests/test-backup.mjs",
+    "test:skills": "node tools/tests/test-skills.mjs",
+    "test:skills-api": "node tools/tests/test-skills-api.mjs",
+    "audit:routes": "node tools/tests/audit-routes.mjs"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}
